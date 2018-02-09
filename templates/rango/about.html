@@ -1,23 +1,23 @@
 ﻿<!DOCTYPE html>
-<html>
 
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
 
+<html>
+
 {% block title_block %}
-	About
+    About
 {% endblock %}
 
-
 {% block body_block %}
-	<h1>Rango says here is the about page.</h1>
-
-	<div>
-		<img src="{% static "/images/mm.png" %}" alt= "Picture of MM" /> <br />
-		This tutorial has been put together by Bita.
-		<img src="{{MEDIA_URL}}cat.jpg" alt= "Picture of cat" /> <br />
-	</div>
-
-{%endblock%}
+    <h1>Rango says here is the about page.</h1>
+    <div>
+        <img src="{% static "images/about.jpg" %}" alt="Picture of About" />
+    </div>
+    <div>
+        This tutorial has been put together by Pierre Ezard.<br />
+        <img src="{{MEDIA_URL}}cat.jpg" alt="Picture of a cat" />
+    </div>
+{% endblock %}
 
 </html>
